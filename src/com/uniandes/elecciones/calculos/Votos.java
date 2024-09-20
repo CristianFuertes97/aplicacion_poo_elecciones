@@ -8,6 +8,12 @@ public class Votos{
     private int totalVotosGenero;
     private int totalVotosEdad;
     private int totalVotosPublicidad;
+    private int totalVotosEnElecciones;
+
+	public int getTotalVotosEnElecciones() {
+		return this.totalVotosEnElecciones;
+	}
+
 
     // getters de los atributos
     public int getTotalVotosGenero() {
@@ -39,7 +45,4 @@ public class Votos{
         return this.totalVotosPublicidad = candidato.getVotosInfluenciaInternet() + candidato.getVotosInfluenciaRadio() + candidato.getVotosInfluenciaTelevision();
     }
 
-    public int calcularTotalVotos(){
-        return this.totalVotos += (getTotalVotosEdad() + getTotalVotosGenero() + getTotalVotsPublicidad());
-    }
 }

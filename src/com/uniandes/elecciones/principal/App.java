@@ -70,8 +70,16 @@ public class App {
     
       // total d votaciones en las elecciones candidato 1
       Votos votacion = new Votos();
-      System.out.println("Total de votos en las elecciones: "+ votacion.getTotalVotos());
       System.out.println("Total de votaciones por genero: "+ votacion.calcularVotosGenero(candidato1));
+      System.out.println("Total de votaciones por edad: "+ votacion.calcularVotosEdad(candidato1));
+      System.out.println("Total de votaciones por publicidad: "+ votacion.calcularVotosPublicidad(candidato1));
+      
+      System.out.println("---------------------------------------------------");
+      System.out.println("Candidato 2");
+      System.out.println("Total de votaciones por genero: "+ votacion.calcularVotosGenero(candidato2));
+      System.out.println("Total de votaciones por edad: "+ votacion.calcularVotosEdad(candidato2));
+      System.out.println("Total de votaciones por publicidad: "+ votacion.calcularVotosPublicidad(candidato2));
+      
 
     }
 }
